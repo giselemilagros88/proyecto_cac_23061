@@ -1,0 +1,207 @@
+/*no va dentro de ningun condicional o media querie y es lo que llamamos escritorio primero
+1400 mayor 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Anuphan', sans-serif;
+}
+
+.header{
+    height: 100vh;
+   
+}
+.colorGris{
+   background-color: rgb(53,58,64);
+}
+.ulHeader{
+    background-color:pink;
+}
+.navbar-dark .navbar-nav .colorVerde{
+    color: rgb(9, 130, 47);
+}
+
+
+/*seccion la conferencia - hermano del headerNav*/
+.laConferencia{
+    height: 90%;
+    background:linear-gradient(to bottom,#00000026, #000000c2,#00000026), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.contenedorTextConf{
+     width:40%;
+     color:white;
+    /* height: 35%;*/
+    
+     text-align: right;
+    /* display: flex;
+     flex-direction: column;
+     justify-content: space-between;*/
+}
+
+.contenedorTextConf h1{
+    margin-bottom: 1rem;
+}
+.contenedorTextConf p{
+    margin-bottom: 1rem;
+}
+
+.sectionOradores h2{
+    text-align: center;
+}
+.card{
+    width:350px;
+}
+
+.card img{
+    width: 100%;
+    height:400px;
+    object-fit: cover;
+    /*border-radius: 4% 4% 0px 0px;*/
+   
+}
+.cardTags{
+    display:flex;
+   
+}
+.cardTags h4{
+    margin-right: 0.8rem;
+    border-radius: 5%;
+    background-color:rgb(255, 196, 0);
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.columnaIzq{
+    background-image: url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+.columnaDer{
+    background-color:rgb(41, 41, 41);
+    color:white;
+    height: 60vh;
+}
+.formulario{
+    width:50%;
+    margin:0 auto;
+}
+.colorBtn{
+   
+    background-color: rgb(77, 222, 77);
+    color:white;
+}
+.wsp{
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    width: 50px;
+}
+.footer{
+    background:linear-gradient( to right, #1d3947,#1d4962, #1e5372) ;
+    height: 15vh;
+    margin-top:5rem;
+}
+.contenedorFooter{
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.contenedorFooter a{
+    color: white;
+    text-decoration: none;
+    font-size:1rem;
+}
+/*vamos a cargar ahora el diseño para celular*/
+/*0 - 600px  */
+@media screen and (max-width: 567px){
+   
+    .laConferencia{
+        height: 70%;
+        background:url("../assets/img/madero.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-right:initial;
+        align-items: center;
+        justify-content:center;
+    
+    }
+    .contenedorTextConf{
+        background:linear-gradient(to bottom, #000000c2, #000000c2);
+        width: 100%;
+        text-align: center;
+    }
+    .escritorio{
+        display:none;
+    }
+  
+    .columnaIzq{
+        height: 30vh;
+    }
+    .columnaDer{
+        height: 35vh;
+    }
+    .footer{
+        height: initial;
+        padding: 30px;
+    }
+   
+}
+
+@media screen and (min-width: 568px) and (max-width:767px) {
+  
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+}
+
+@media screen and (min-width: 992px) and (max-width:1299px) {
+    .headerNav{
+        padding:1rem 1rem;
+    }
+    .contenedorLogo{
+        width:30%;
+    }
+    .navegacion{
+        margin-left:20px;
+        width: 65%;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width:1399px) {
+    
+}
+
+/*otra opcion 
+/*celulares
+@media screen and (max-width: 767px){
+  
+}
+/*algunas tablets y notebook
+@media screen and (min-width: 768px) and (max-width:1399px) {
+    
+}
+
+*/
